@@ -10,6 +10,9 @@ import { connectDB } from './config/db.js';
 
 const app = express();
 
+// Tell Express to trust the reverse proxy (e.g., Render, Vercel, Nginx)
+app.set('trust proxy', 1);
+
 app.use(helmet());
 app.use(cors({
   origin: (process.env.CLIENT_ORIGIN?.split(',') || ['*']),
