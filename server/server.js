@@ -32,7 +32,7 @@ const corsOptions = {
 
 // Global middleware
 app.use(helmet());
-app.use(cors(corsOptions));
+app.use(cors({ origin: true, credentials: true })); // temporary but unsafe
 app.options('*', cors(corsOptions)); // Handle all preflight requests
 app.use(express.json({ limit: '4mb' }));
 app.use(morgan('dev'));
