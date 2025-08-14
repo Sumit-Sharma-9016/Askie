@@ -10,10 +10,6 @@ export default function TopicInput({ onExplained }) {
 
   async function handleExplain() {
     try {
-      if(!topic) {
-        alert("Give a topic name");
-        return;
-      }
       setLoading(true); setError('');
       const data = await explain({ topic: topic || undefined, file });
       onExplained(data, topic);

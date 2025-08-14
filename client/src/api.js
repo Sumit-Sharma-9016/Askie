@@ -1,4 +1,4 @@
-const BASE = import.meta.env.VITE_API_BASE || 'https://askie-ncby.onrender.com';
+const BASE = import.meta.env.VITE_API_BASE || 'https://askie-ncby.onrender.com/api';
 
 async function handleResponse(res, actionName) {
   if (!res.ok) {
