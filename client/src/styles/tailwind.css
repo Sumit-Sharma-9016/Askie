@@ -12,7 +12,7 @@
 }
 .light .card {
   /* Smaller padding on mobile, larger on md+ */
-  @apply bg-white rounded-lg border border-gray-200 shadow-lg p-4 sm:p-6 transition hover:shadow-xl;
+  @apply bg-white rounded-lg border border-gray-200 shadow-lg p-3 sm:p-6 transition hover:shadow-xl;
 }
 .light .btn {
   /* Smaller padding on mobile */
@@ -33,7 +33,7 @@
   @apply bg-gray-900 text-gray-100;
 }
 .dark .card {
-  @apply bg-gray-800 border border-gray-700 rounded-lg shadow-lg p-6 transition hover:shadow-xl text-gray-200 leading-relaxed;
+  @apply bg-gray-800 border border-gray-700 rounded-lg shadow-lg p-3 sm:p-6 transition hover:shadow-xl text-gray-200 leading-relaxed;
 }
 .dark p {
   @apply text-gray-200 leading-relaxed;

@@ -5,7 +5,7 @@ export default function Explanation({ data }) {
 
   return (
     <Section title="Explanation & Examples">
-      <div className="flex flex-col items-center w-full px-2 md:px-4">
+      <div className="flex flex-col items-center w-full  md:px-4">
         {/* Explanation */}
         {Array.isArray(data.explanation) && (
           <div className="space-y-4 w-full max-w-3xl">
