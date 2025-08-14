@@ -1,4 +1,4 @@
-const BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5000/api';
+const BASE = import.meta.env.VITE_API_BASE || 'https://askie-ji6k.onrender.com/api';
 
 async function handleResponse(res, actionName) {
   if (!res.ok) {
