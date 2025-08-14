@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+/* ===== Light Theme ===== */
+.light {
+  @apply bg-gray-50 text-gray-800;
+}
+.light .card {
+  /* Smaller padding on mobile, larger on md+ */
+  @apply bg-white rounded-lg border border-gray-200 shadow-lg p-4 sm:p-6 transition hover:shadow-xl;
+}
+.light .btn {
+  /* Smaller padding on mobile */
+  @apply bg-cyan-500 text-white hover:bg-cyan-600 px-3 py-1.5 sm:px-5 sm:py-2.5;
+}
+.light .input {
+  @apply bg-white border border-gray-300 text-gray-800;
+}
+.light .label {
+  @apply text-gray-700;
+}
+.light .section-title {
+  @apply text-xl sm:text-2xl font-bold text-cyan-600 mb-3 sm:mb-4 text-left border-b-2 border-cyan-200 pb-1 sm:pb-2;
+}
+
+/* ===== Dark Theme ===== */
+.dark {
+  @apply bg-gray-900 text-gray-100;
+}
+.dark .card {
+  @apply bg-gray-800 border border-gray-700 rounded-lg shadow-lg p-6 transition hover:shadow-xl text-gray-200 leading-relaxed;
+}
+.dark p {
+  @apply text-gray-200 leading-relaxed;
+}
+.dark code {
+  @apply text-indigo-900 font-mono;
+}
+.dark .btn {
+  @apply bg-indigo-500 text-white hover:bg-indigo-600 px-3 py-1.5 sm:px-5 sm:py-2.5;
+}
+.dark .input {
+  @apply bg-gray-800 border border-gray-600 text-gray-200;
+}
+.dark .label {
+  @apply text-gray-300;
+}
+.dark .section-title {
+  @apply text-xl sm:text-2xl font-bold text-indigo-400 mb-3 sm:mb-4 text-left border-b-2 border-indigo-500 pb-1 sm:pb-2;
+}
+
+/* ===== Common styles ===== */
+.btn {
+  @apply inline-flex items-center justify-center rounded-lg font-semibold focus:ring-2 transition;
+}
+.input {
+  @apply w-full px-3 sm:px-4 py-1.5 sm:py-2 rounded-md focus:ring-2 outline-none;
+}
+
+/* ===== Quiz Styling ===== */
+.quiz-question {
+  @apply font-semibold mb-4;
+}
+.light .quiz-question {
+  @apply text-gray-800;
+}
+.dark .quiz-question {
+  @apply text-gray-100;
+}
+
+/* Quiz option styles */
+.quiz-option {
+  @apply flex items-center gap-2 border rounded-lg px-4 py-3 cursor-pointer transition;
+}
+.light .quiz-option {
+  @apply border-gray-300 bg-white hover:bg-gray-100;
+}
+.dark .quiz-option {
+  @apply border-gray-600 bg-gray-800 hover:bg-gray-700;
+}
+
+/* Selected option */
+.light .quiz-option-selected {
+  @apply bg-cyan-300 border-cyan-400;
+}
+.dark .quiz-option-selected {
+  @apply bg-indigo-300 text-black border-indigo-400;
+}
+
+/* Radio button accent */
+.quiz-option input[type="radio"] {
+  @apply accent-slate-500;
+}
